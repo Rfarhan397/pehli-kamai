@@ -1,11 +1,11 @@
 :root {
-    --color-primary: #2584ff;
-    --color-secondary: #00d9ff;
-    --color-accent: #ff3400;
-    --color-headings: #1b0760;
-    --color-body: #918ca4;
-  }
-@font-face {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+}
+/* @font-face {
   font-family: San Francisco Display Regular;
   src: url(./Fonts/SanFranciscoDisplay-Regular.otf);
 }
@@ -23,7 +23,7 @@
   font-family: San Francisco Display SemBd;
   src: url(./Fonts/SanFranciscoDisplay-Semibold.otf);
   font-weight: semibold;
-}
+} */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -69,38 +69,50 @@ a {
 }
 .categories {
   background-color: white;
+  height: 100%;
   width: 100%;
   display: grid;
   justify-content: center;
   margin: auto;
   padding: 20%;
   position: relative;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 2px solid #d8d8d8;
+  text-align: center;
 }
 .blockCircle {
   width: 10px;
   height: 10px;
-  background-color: red;
+  border: 1px solid #a2a2a2;
+  background-color: white;
   border-radius: 50%;
-
   display: grid;
   margin: auto;
   position: absolute;
   top: -5px;
   left: 50%;
 }
+.blockCircleRed {
+  background-color: red;
+}
 .blockFirst {
   border-radius: 8px 0 0 8px;
 }
 .blockLast {
   border-radius: 0 8px 8px 0;
+  border-right: 2px solid #d8d8d8;
 }
 
 .greyBlock {
   background-color: #fafafa;
 }
 .activeBlock {
-    background: rgb(49,200,251);
-    background: linear-gradient(90deg, rgba(49,200,251,1) 35%, rgba(1,108,160,1) 100%);
+  background: rgb(49, 200, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(49, 200, 251, 1) 35%,
+    rgba(1, 108, 160, 1) 100%
+  );
 }
 
 .categoryLogo {
@@ -111,79 +123,118 @@ a {
 .categories > p {
   font-size: 160%;
 }
-.type{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding: 2% 10% 4%;
-  }
+
+.lineBlock {
+  width: 100%;
+  padding: 0 10%;
+  position: relative;
 }
-.typeLogo{
-    margin: auto;
-  width: 50px;
-  margin-bottom: 8px;
+.line {
+  border-bottom: 1px solid #d8d8d8;
+  margin: 10% 0;
+  color: #d8d8d8;
+  width: 100%;
+  height: 2px;
 }
-.types{
-    background-color: white;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    margin: auto;
-    padding: 20%;
-    position: relative;
+.lineSquare {
+  color: #d8d8d8;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-left: 3px solid #d8d8d8;
+  border-bottom: 3px solid #d8d8d8;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -18px;
+  right: 48.2%;
+}
+.type {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 5% 15% 5%;
+}
+
+.types {
+  background-color: white;
+  height: 200px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  padding: 0 5%;
+  position: relative;
+  border-left: 2px solid #808080;
+  border-bottom: 2px solid #d8d8d8;
+  border-top: 2px solid #d8d8d8;
+  text-align: center;
+  width: 100% !important;
 }
 .types > p {
-    font-size: 160%;
-  }
-  .typeBlock {
-    background: rgb(0, 106, 158);
-    background: linear-gradient(
-      90deg,
-      rgba(0, 106, 158, 1) 35%,
-      rgba(48, 198, 249, 1) 100%
-    );
-  }
-  .blocksquare {
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 80%;
-  
-    display: grid;
-    margin: auto;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-  }
-  .center {
-    text-align: center;
-    border: 3px ;
-  }
-  .para1 {
-    
-    font-family: San Francisco Display Med;
-    font-style: medium;
-    font-size: 20px;
-    color: #000000;
-  }
-  .btn {
- 
-    border: 0;
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 2rem 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-  
- 
+  font-size: 100%;
+}
+.typeBlock {
+  background: rgb(0, 106, 158);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 106, 158, 1) 35%,
+    rgba(48, 198, 249, 1) 100%
+  );
+}
+.blocksquare {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 80%;
+
+  display: grid;
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+}
+
+.formArea {
+  padding: 0 20%;
+}
+
+.formArea > h1 {
+  font-size: 70px;
+  color: #4d4d4d;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+}
+
+.input {
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #656565;
+  padding: 30px;
+  font-size: 20px;
+  color: #000000;
+}
+.form > textarea {
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #656565;
+  padding: 30px;
+  font-size: 20px;
+  color: #000000;
+  grid-column: 1 / span 2;
+}
 @media only screen and (max-width: 800px) {
   .category {
     grid-template-columns: 1fr;
+    row-gap: 10px;
   }
+  .categories {
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+  }
+
   .topImageText > h1 {
     font-size: 50px;
   }
@@ -193,5 +244,14 @@ a {
   .topImage {
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  .blockLast {
+    border-right: 0px solid grey;
+  }
+  .lineSquare {
+    right: 45%;
+  }
+  .type {
+    grid-template-columns: 1fr;
   }
 }
