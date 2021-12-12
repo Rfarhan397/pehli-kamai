@@ -1,0 +1,197 @@
+:root {
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-accent: #ff3400;
+    --color-headings: #1b0760;
+    --color-body: #918ca4;
+  }
+@font-face {
+  font-family: San Francisco Display Regular;
+  src: url(./Fonts/SanFranciscoDisplay-Regular.otf);
+}
+@font-face {
+  font-family: San Francisco Display Med;
+  src: url(./Fonts/SanFranciscoDisplay-Medium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: San Francisco Display Bold;
+  src: url(./Fonts/SanFranciscoDisplay-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: San Francisco Display SemBd;
+  src: url(./Fonts/SanFranciscoDisplay-Semibold.otf);
+  font-weight: semibold;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: San Francisco Display Regular;
+}
+
+a {
+  text-decoration: none;
+}
+.topImage {
+  background-image: url(./images/WhatsApp\ Image\ 2021-12-12\ at\ 2.18.29\ PM.jpeg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.topImageText {
+  margin-left: 100px;
+  color: white;
+}
+
+.topImageText > h1 {
+  font-size: 70px;
+  margin: 0;
+  margin-bottom: 60px;
+  display: inline;
+}
+
+.topMedText {
+  font-family: San Francisco Display Med;
+}
+.topImageText > h3 {
+  font-size: 50px;
+}
+
+.category {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 2% 10% 4%;
+}
+.categories {
+  background-color: white;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  padding: 20%;
+  position: relative;
+}
+.blockCircle {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+
+  display: grid;
+  margin: auto;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+}
+.blockFirst {
+  border-radius: 8px 0 0 8px;
+}
+.blockLast {
+  border-radius: 0 8px 8px 0;
+}
+
+.greyBlock {
+  background-color: #fafafa;
+}
+.activeBlock {
+    background: rgb(49,200,251);
+    background: linear-gradient(90deg, rgba(49,200,251,1) 35%, rgba(1,108,160,1) 100%);
+}
+
+.categoryLogo {
+  margin: auto;
+  width: 50px;
+  margin-bottom: 8px;
+}
+.categories > p {
+  font-size: 160%;
+}
+.type{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 2% 10% 4%;
+  }
+}
+.typeLogo{
+    margin: auto;
+  width: 50px;
+  margin-bottom: 8px;
+}
+.types{
+    background-color: white;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    padding: 20%;
+    position: relative;
+}
+.types > p {
+    font-size: 160%;
+  }
+  .typeBlock {
+    background: rgb(0, 106, 158);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 106, 158, 1) 35%,
+      rgba(48, 198, 249, 1) 100%
+    );
+  }
+  .blocksquare {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 80%;
+  
+    display: grid;
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+  }
+  .center {
+    text-align: center;
+    border: 3px ;
+  }
+  .para1 {
+    
+    font-family: San Francisco Display Med;
+    font-style: medium;
+    font-size: 20px;
+    color: #000000;
+  }
+  .btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+ 
+@media only screen and (max-width: 800px) {
+  .category {
+    grid-template-columns: 1fr;
+  }
+  .topImageText > h1 {
+    font-size: 50px;
+  }
+  .topImageText > h3 {
+    font-size: 30px;
+  }
+  .topImage {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

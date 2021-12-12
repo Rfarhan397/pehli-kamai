@@ -1,1 +1,0 @@
-# pehli-kamai
