@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: red;
+  background-color: #006a9e;
   z-index: 999999999999999999999999999;
 }
 .loader {

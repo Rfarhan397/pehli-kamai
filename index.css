@@ -104,6 +104,7 @@ a {
     rgba(49, 200, 251, 1) 35%,
     rgba(1, 108, 160, 1) 100%
   );
+  color: white;
 }
 
 .categoryLogo {
@@ -267,9 +268,9 @@ a {
 }
 
 .footer a {
-  color: #939598;
+  color: #4d4d4d;
   transition: color 0.3s;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .footer__section {
@@ -281,7 +282,6 @@ a {
 }
 
 .footer__heading {
-  text-transform: uppercase;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.5;
@@ -343,20 +343,20 @@ a {
   display: grid;
   margin-bottom: 20px;
   grid-template-columns: 1fr auto;
+  border: 0.1px solid #d8d8d8;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 8px 6px -6px black;
 }
 
 .input-group .input {
-  padding: 15px 5px;
+  padding: 15px 0;
   width: 0;
 }
 
 .input-group .btn {
-  margin: 4px;
   border: 0;
-  width: 40px;
+  width: 45px;
   border-radius: 50%;
   background-color: #006a9e;
   color: white;
@@ -395,6 +395,23 @@ a {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   align-content: center;
+  justify-content: space-around;
+  transform: translateY(2px);
+}
+.fbicon {
+  width: 15px;
+  margin: auto 0;
+  margin-left: auto;
+}
+
+.twicon {
+  width: 33px;
+  margin: auto 0;
+  margin-right: auto;
+}
+.inicon {
+  width: 30px;
+  margin: auto;
 }
 .socialIcons > p {
   font-size: 36px;
@@ -445,7 +462,7 @@ a {
     grid-column: 1 / span 3;
   }
 
-  .socialIcons > img {
+  .socialIcons > a {
     margin: 15px 0;
   }
   .social {
@@ -482,4 +499,11 @@ a {
   .footer__section {
     border-bottom: 2px solid #808080;
   }
+}
+
+.colorBlack {
+  color: #000000;
+}
+.colorWhite {
+  color: white;
 }
