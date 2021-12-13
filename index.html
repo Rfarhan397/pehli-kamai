@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./loader.css">
+    
     <title>CONVEX</title>
   </head>
   <body>
+     <!-- ....................................... -->
+    
+    <div class="loaderwrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+   
+
+    <!-- ....................................... -->
     <div class="topImage">
       <div class="topImageText">
         <h1>Start&nbsp;</h1>
@@ -171,6 +181,19 @@
   </div>
 </div>
 <div class="end"><p>*Disclaimer The information provided by Convex Advertising LLC on https://www.convexad.com/ is for general informational purposes only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site. Should you have any feedback, comments, requests for technical support or other inquiries, please contact us by email: enquiry@convexad.com.</p></div>
-    
+
+<script>
+  let spinnerWrapper = document.querySelector(".loaderwrapper");
+  setTimeout(() => {
+    spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+    // window.addEventListener("load", function () {
+    //   // spinnerWrapper.style.display = 'none';
+
+    //   spinnerWrapper.parentElement.removeChild(spinnerWrapper), 1000;
+    // });
+  }, 2000);
+</script>
+
+
   </body>
 </html>
