@@ -70,6 +70,16 @@ a {
   border-top: 1px solid #d8d8d8;
   border-bottom: 2px solid #d8d8d8;
   text-align: center;
+  transition: all 0.5s;
+}
+.categories:hover {
+  background-color: rgb(49, 200, 251);
+}
+.categories:hover .categoryLogo {
+  transform: scale(1.3, 1.3);
+}
+.categories:hover .colorBlack {
+  color: white;
 }
 .blockCircle {
   width: 10px;
@@ -99,7 +109,7 @@ a {
   background-color: #fafafa;
 }
 .activeBlock {
-  background: rgb(49, 200, 251);
+  background-color: rgb(49, 200, 251);
   background: linear-gradient(
     90deg,
     rgba(49, 200, 251, 1) 35%,
@@ -112,6 +122,7 @@ a {
   margin: auto;
   width: 50px;
   margin-bottom: 8px;
+  transition: all 0.5s;
 }
 .categories > p {
   font-size: 160%;
@@ -162,7 +173,18 @@ a {
   border-top: 2px solid #d8d8d8;
   text-align: center;
   width: 100% !important;
+  transition: all 0.5s;
 }
+.types:hover {
+  background-color: rgb(49, 200, 251);
+  transform: scale(1.1, 1.1);
+  z-index: 2;
+}
+
+.types:hover .colorBlack {
+  color: white;
+}
+
 .types > p {
   font-size: 100%;
 }
@@ -243,11 +265,13 @@ a {
   padding: 5px 15px;
   border-radius: 3px;
   background-color: white;
+  transition: all 0.5s;
 }
 
 .coloredButton {
   background-color: #006a9e;
   color: white;
+  transition: all 0.5s;
 }
 .groupedButton {
   display: grid;
@@ -403,16 +427,28 @@ a {
   width: 15px;
   margin: auto 0;
   margin-left: auto;
+  transition: all 0.5s;
+}
+.fbicon:hover {
+  transform: scale(1.3, 1.3);
 }
 
 .twicon {
   width: 33px;
   margin: auto 0;
   margin-right: auto;
+  transition: all 0.5s;
+}
+.twicon:hover {
+  transform: scale(1.3, 1.3);
 }
 .inicon {
   width: 30px;
   margin: auto;
+  transition: all 0.5s;
+}
+.inicon:hover {
+  transform: scale(1.3, 1.3);
 }
 .socialIcons > p {
   font-size: 36px;
@@ -502,9 +538,16 @@ a {
   }
 }
 
+/* //........................... */
+
 .colorBlack {
   color: #000000;
+  transition: color 0.5s;
 }
 .colorWhite {
   color: white;
+}
+
+.coloredButton:hover {
+  background-color: lightgray;
 }
